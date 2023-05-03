@@ -11,7 +11,7 @@
 
 # MAGIC %md-sandbox
 # MAGIC <div  style="text-align: center; line-height: 0; padding-top: 9px;">
-# MAGIC   <img src="/assets/CDC_architecture.png" width="60%">
+# MAGIC   <img src="https://raw.githubusercontent.com/luismirandad27/de-python-changedatacapture-databricks/main/assets/CDC_Architecture.png" width="60%">
 # MAGIC </div>
 
 # COMMAND ----------
