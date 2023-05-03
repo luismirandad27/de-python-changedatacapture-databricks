@@ -27,7 +27,7 @@
 
 # COMMAND ----------
 
-dbutils.fs.rm("dbfs:/mnt/demo_pro/checkpoints/games_silver",True)
+dbutils.fs.rm("dbfs:/mnt/cdc_demo/checkpoints/games_silver",True)
 
 # COMMAND ----------
 
@@ -213,7 +213,7 @@ def process_data_to_silver():
             .select("v.*")
             .writeStream
             .foreachBatch(batch_merge_operation_cdc)
-            .option("checkpointLocation","dbfs:/mnt/demo_pro/checkpoints/games_silver")
+            .option("checkpointLocation","dbfs:/mnt/cdc_demo/checkpoints/games_silver")
             .trigger(availableNow=True)
             .start()
     )
